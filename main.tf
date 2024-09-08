@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "dataeng_bucket" {
-  bucket = "dataeng-modulo-7-${random_string.suffix.result}"
+  bucket = "dataeng-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
-  length  = 6
+  length  = 10
   special = false
   upper   = false
 }
