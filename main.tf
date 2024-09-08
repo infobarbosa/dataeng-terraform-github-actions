@@ -1,6 +1,5 @@
 provider "aws" {
   region = "sa-east-1"
-  profile = "default"
 }
 
 resource "aws_s3_bucket" "dataeng_modulo_7_bucket" {
